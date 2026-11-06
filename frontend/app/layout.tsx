@@ -23,7 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <nav className="hr-bar" aria-label="Portfolio">
+          <a href="https://harish04010-portfolio.vercel.app">&larr; Harish&apos;s portfolio</a>
+          <a href="https://github.com/harish04010/waybill">View the code on GitHub &rarr;</a>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
